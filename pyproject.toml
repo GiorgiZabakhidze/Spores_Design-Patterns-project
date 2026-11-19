@@ -1,0 +1,48 @@
+[project]
+name = "creature-sim"
+version = "0.1.0"
+description = "Assignment 1: Predator vs Pray simulation (Design Patterns, FreeUni)"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = ["ruff", "mypy", "pytest"]
+
+# ---------------------------------------------------------------- ruff
+# NOTE: if the course "playground" project ships its own ruff/mypy config,
+# paste it over these two sections — the graders will use theirs.
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E", "W",  # pycodestyle
+    "F",       # pyflakes (unused imports/variables)
+    "I",       # isort (import order)
+    "N",       # pep8-naming: variable_name, ClassName, CONSTANT_NAME
+    "UP",      # pyupgrade (modern syntax)
+    "B",       # bugbear (common bugs)
+    "SIM",     # simplifications
+    "C4",      # comprehensions
+    "RET",     # return statements
+    "PT",      # pytest style
+    "C90",     # mccabe complexity -> catches "needlessly long methods"
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 6
+
+[tool.ruff.format]
+quote-style = "double"
+
+# ---------------------------------------------------------------- mypy
+[tool.mypy]
+python_version = "3.13"
+strict = true
+warn_unreachable = true
+pretty = true
+
+# ---------------------------------------------------------------- pytest
+[tool.pytest.ini_options]
+testpaths = ["tests"]
