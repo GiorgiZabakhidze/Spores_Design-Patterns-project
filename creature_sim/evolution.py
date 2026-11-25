@@ -1,4 +1,4 @@
-"""evolution logic kickstart and the constants live here"""
+"""evolution logic kickstart and the constant tunings live here"""
 
 from random import Random
 
