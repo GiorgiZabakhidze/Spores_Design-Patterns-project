@@ -1,6 +1,8 @@
 """Ways a creature can move along the world ray"""
+
 from abc import ABC, abstractmethod
 from typing import Protocol
+
 
 class Mover(Protocol):
     @property
