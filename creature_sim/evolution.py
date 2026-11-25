@@ -7,7 +7,7 @@ from creature_sim.movement_policy import MovementPolicy
 from creature_sim.power import Claws, ClawSize, PowerModifier, Teeth, TeethSharpness
 
 HEALTH_RANGE = (50, 100)
-STAMINA_RANGE = (1, 100)
+STAMINA_RANGE = (1, 200)
 POWER_RANGE = (1, 10)
 LEGS_RANGE = (0, 4)
 WINGS_RANGE = (0, 4)
