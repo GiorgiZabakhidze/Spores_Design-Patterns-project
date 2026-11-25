@@ -1,7 +1,7 @@
 [project]
 name = "creature-sim"
 version = "0.1.0"
-description = "Assignment 1: Predator vs Pray simulation (Design Patterns, FreeUni)"
+description = "Spore"
 requires-python = ">=3.13"
 dependencies = []
 
