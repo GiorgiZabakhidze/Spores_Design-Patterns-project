@@ -28,8 +28,8 @@ def describe(label: str, creature: Creature) -> str:
 
 
 class ConsoleReporter:
-    def report_start(self, number: int, predator: Creature, prey: Creature) -> None:
-        print(f"=== Simulation #{number} ===")
+    def report_start(self, sim_no: int, predator: Creature, prey: Creature) -> None:
+        print(f"=== Simulation #{sim_no} ===")
         print(describe(PREDATOR_LABEL, predator))
         print(describe(PREY_LABEL, prey))
 
